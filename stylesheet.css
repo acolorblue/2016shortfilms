@@ -1220,9 +1220,9 @@ a:hover {
 
 
 .iphone-screen {
-  width: 375px;
+  width: 374.5px;
 /*   WAS 650 */
-  height: 647px;
+  height: 656.5px;
 /*   top: -60px; */
   position: relative;
 /*   border: 3px solid black; */
@@ -1452,6 +1452,7 @@ break: #E8E8E8;
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 400;
   margin: 0;
+  left: 0;
   padding-top: 85px;
   background-color: inherit;
   height: 100%;
