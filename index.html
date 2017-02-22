@@ -64,7 +64,37 @@
     
   </head>
   
-  <body>
+<body>
+<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <!-- LOADING -->
    <div id="load_screen">
      <div id="loading">       
@@ -110,12 +140,22 @@
 <div class="neonbody">
   <div class="sign-wrap">
     <div class="sign">
-      <h1 class="nowplaying">All 2016 Short Films</h1>
+      <h1 class="nowplaying">Now playing</h1>
     </div>
   </div>
 </div>
         
 
+<button class="jpg">
+  <a href="http://acolorblue.co/spencermcmullen" target="_blank">
+  <img src="https://raw.githubusercontent.com/acolorblue/spencermcmullen/master/Screen%20Shot%202017-01-29%20at%2010.18.20%20PM.png" width="78" height="45" title="3D Art Gallery">
+  </a>
+  <br>
+  <br>
+  <span>3D Art Gallery</span>
+</button>  
+  
+  
         <!-- EMAIL -->
 <a class="email" href="mailto:info@acolorblue.co"> 
 <img src="https://cdn4.iconfinder.com/data/icons/ios7-line/512/Open_mail.png">
@@ -142,8 +182,8 @@
     
       <div class="display" id="mainCanvas">
       
-<!-- GOOD KID MAD CITY -->  
-<img onclick="Select20()" src="https://github.com/acolorblue/acolorblue.github.io/blob/gh-pages/2016%20Films%20Covers/20%20GKMC/Cartridge%20+%20GKMC.png?raw=true" width="210" height="190">
+<!--         MISREADING MY MADNESS -->
+<img onclick="Select20()" src="https://github.com/acolorblue/acolorblue.github.io/blob/gh-pages/2016%20Films%20Covers/11%20Misreading%20MY%20Madness/Cartridge%20+%20MRM.png?raw=true" width="210" height="190">
       
 <!-- ARRET PIPI -->
 <img onclick = "Select1()" id ="1" src="https://github.com/acolorblue/acolorblue.github.io/blob/gh-pages/2016%20Films%20Covers/1%20Arret%20Pipi/Cartridge%20+%20Arret%20Pipi%20+%20Title.png?raw=true" width="210" height="190"/>
@@ -175,8 +215,8 @@
 <!-- INGRID SILVA -->
 <img onclick="Select10()" id ="10" src="https://github.com/acolorblue/acolorblue.github.io/blob/gh-pages/2016%20Films%20Covers/10%20Ingrid%20Silva/Cartridge%20+%20Ingrid%20silva.png?raw=true" width="210" height="190">
   
-<!-- MISREADING MY MADNESS -->
-<img onclick="Select11()" id ="11" src="https://github.com/acolorblue/acolorblue.github.io/blob/gh-pages/2016%20Films%20Covers/11%20Misreading%20MY%20Madness/Cartridge%20+%20MRM.png?raw=true" width="210" height="190"/>
+<!-- GKMC -->
+<img onclick="Select11()" id ="11" src="https://raw.githubusercontent.com/acolorblue/acolorblue.github.io/gh-pages/2016%20Films%20Covers/20%20GKMC/Cartridge%20%2B%20GKMC.png" width="210" height="190"/>
   
 <!-- ALAGOAS - 1981 -->
 <img onclick="Select12()" id ="12" src="https://github.com/acolorblue/acolorblue.github.io/blob/gh-pages/2016%20Films%20Covers/12%20Alagoas%20-%201981/Cartridge%20+%20Alagoas%201981.png?raw=true" width="210" height="190">
@@ -400,14 +440,173 @@
           
               <div class="iphonescreen">
         
+                
+                
+                
             
-            <div class="iphonescreenContent">
+            <div class="page-container">
+
+
+    <div class="iphone-screen">
+      <div class="border">
+        <div class="imessage">
+          <div class="screen">
+
+
+            <div class="status-bar">
+
+              <img src="https://github.com/acolorblue/gallery/blob/master/images/iPhone%20Comments/Status%20Bar%20-%20Official%201.png?raw=true">
+
+            </div>
+
+<!-- <input id="name" type="text" name="fullname" class="name" placeholder="@" value="@"> -->
+            
+            <!-- NAVIGATION -->
+            <nav class="name-bar page-nav">
+
+
+  
+              <ul class="name-bar-button page-nav-list cf">
+                <li class="page-nav-item active firstbutton" data-pagetarget="1"><i class="fa fa-angle-left"></i><span onclick="">Comments</span></li>
+
+
+                <li class="name"><input id="name" type="text" name="fullname" class="name" value="@" placeholder="@"><br></li>
+                
+<!-- <li class="name">
+
+
+<form action="demo_form.asp" method='post'>
+<input id="name" id="page-content-2" type="text" name="fullname" class="name page-content-container page-content" placeholder="@" value="@">
+</form> 
+
+      </li> --> 
+
+
+                <li class="page-nav-item secondbutton" data-pagetarget="2" style="float:right;"><span onclick="">Timeline</span></li>
+              </ul>
+
+
+            </nav>
+
+            
+            
+            
+
+            <!-- Each Page -->
+            <div class="page-content-container">
+
+
+              <!-- 1ST PAGE -->
+              <div id="page-content-1" class="page-content active">
+
+
+                <form id="comment" method='post' class="chat">
+                  <span></span><!--  SPINNER -->
+                  <div class="message-screen messages comments" id="adobewordpress" onclick="">
+                    
+                    
+
+        <div class="singlemessage">
+
+
+          <div class="timestamp"><span><b>Today</b> 11:39 AM</span></div>
+          
+          <div class="sender-text">
+            
+<!--             <input id="name" type="text" name="fullname" class="name" value="@" placeholder="@"><br> -->
+            
+            <p>To comment, type your @ name at the top and comment at the bottom.</p>
+
+            <date><b class="handlename">@acolorblue</b> 02/20/2017  9:38 PM</date>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="input-bar">
+
+        <i class="fa fa-camera"></i>
+
+        <input type="text" id="message" placeholder="Comment..." name="comment" value=""></input>
+
+        <input type="submit" value="Send" class="input-bar-button" id="send">
+
+      </div>
+
+      <!-- COMMENT SECTION -->
+      <div class="comments"></div>
+
+    </form>
+
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+
+                    <!--                     <div id="old-delivered" class="delivered"><span>Delivered</span></div> -->
+
+                 
+
+
+                  <!-- BOTTOM BAR -->
+                  <!--       <div class="input-bar">
+
+
+        <i class="fa fa-camera"></i>
+
+
+        <input name="comment" id="input-text" value="" type="text" placeholder="Comment..."></input>
+
+        <input type="submit" value="Send" class="input-bar-button" id="send">
+       </div> -->
+                  <!-- END OF FIRST PAGE -->
+<!--                 </div> -->
+              </div>
+
+
+              <!-- 2ND PAGE -->
+              <div id="page-content-2" class="page-content timeline">
+
+
+      
+
+     <div class="iphonescreenContent">
             
             <a class="twitter-timeline" href="https://twitter.com/acolorblue" data-widget-id="683973071238107140">Tweets by @acolorblue</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>       
             
             </div>
+
+
+      
+
+      
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
            
+                
+                
+                
+                
+                
+                
               </div>
           
           
@@ -457,7 +656,10 @@ window.addEventListener("load", function(){
 
 
 
-
+// $("button").draggable({
+//   scroll: false,
+//   cancel: false
+// });
 
 
 
@@ -488,7 +690,7 @@ var MarginFirefox = function(){
       $('#Movie1').css('margin-top', -3875+SelectMovie*194);
     }else{
    
- $('#Movie1').css('margin-top', -3870+SelectMovie*194);
+ $('#Movie1').css('margin-top', -3893+SelectMovie*194);
     }
 
 }
@@ -531,10 +733,11 @@ var Select1 = function(){
     led.style.background = "red";
   
 }
-var Select10 = function(){
-  SelectMovie = 10;
+
+var Select2 = function(){
+  SelectMovie = 2;
    MarginFirefox();
-  $frame.attr('src', 'https://player.vimeo.com/video/187772116');
+             $frame.attr('src', 'https://player.vimeo.com/video/156881088');
    $("#Movie1").show();
   isPlaying =true;
     led.style.background = "red";
@@ -611,10 +814,10 @@ var Select9 = function(){
  
 }
 
-var Select2 = function(){
-  SelectMovie = 2;
+var Select10 = function(){
+  SelectMovie = 10;
    MarginFirefox();
-             $frame.attr('src', 'https://player.vimeo.com/video/156881088');
+  $frame.attr('src', 'https://player.vimeo.com/video/187772116');
    $("#Movie1").show();
   isPlaying =true;
     led.style.background = "red";
@@ -624,7 +827,7 @@ var Select2 = function(){
 var Select11 = function(){
   SelectMovie = 11;
    MarginFirefox();
-     $frame.attr('src', 'https://player.vimeo.com/video/184928333');
+     $frame.attr('src', 'https://www.youtube.com/embed/4fLKcHu-LJo');
    $("#Movie1").show();
   isPlaying =true;
     led.style.background = "red";
@@ -714,7 +917,7 @@ var Select19 = function(){
 var Select20 = function(){
   SelectMovie = 0;
    MarginFirefox();
-  $frame.attr('src', 'https://www.youtube.com/embed/4fLKcHu-LJo');
+  $frame.attr('src', 'https://player.vimeo.com/video/184928333');
    $("#Movie1").show();
   isPlaying =true;
     led.style.background = "red";
@@ -888,6 +1091,211 @@ document.oncontextmenu=new Function("alert(message);return false");
 
 // document.oncontextmenu=new Function("alert(message);return false")
 
+
+
+
+
+// //rescalling script
+// function setGameboySize() {
+//   var windowHeight = window.innerHeight;
+//   var gameboy = document.querySelector("body");
+
+//   var calculateZoom = windowHeight / (gameboy.clientHeight + 65);
+//   gameboy.style.transform = "scale(" + calculateZoom + ")";
+
+// }
+
+// window.addEventListener("load", setGameboySize);
+// window.addEventListener("resize", setGameboySize);
+
+// function startUp() {
+//   var redled = document.querySelector(".battery");
+
+//   window.addEventListener("load", function() {
+//     redled.style.opacity = "1";
+//   });
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Original CODE
+
+$(function() {
+  var ref = new Firebase("https://homepage-film-commenting.firebaseio.com/");
+
+ var deliver = function() {
+  $(".delivered").remove();
+
+    $('.delivered').addClass('old');
+    $('.message-screen.comments').append('<div class="delivered"><span>Delivered</span></div>');
+  };
+  
+  function scrollDown() {
+  var focusBottom = document.getElementById("adobewordpress");
+  focusBottom.scrollTop = focusBottom.scrollHeight;
+}
+  
+  function formatAMPM(date) {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+  return strTime;
+}
+
+  
+    ref.on("child_added", function(snapshot) {
+      var newPost = snapshot.val();
+      $(".message-screen.comments").append('<div class="singlemessage"> <div class="sender-text"><p>' +newPost.message +'<date><b class="handlename">' + newPost.name +'</b>'+" " + newPost.postedAt + '</date></div></div>');
+        scrollDown();
+    });
+
+    $("#comment").submit(function() {
+      if($("#name").val()&&$("#message").val()){
+        
+      var d = new Date();
+    var clock = formatAMPM(d);
+    var month = d.getMonth() + 1;
+    var day = d.getDate();
+    var currentDate =
+      (('' + month).length < 2 ? '0' : '') + month + '/' +
+      (('' + day).length < 2 ? '0' : '') + day + '/' +
+
+      d.getFullYear() + '&nbsp;&nbsp;' + clock;
+   
+ /* var currentDate = new Date().toLocaleString('en-US',options); 
+  */  
+        
+        
+      ref.push().set({
+        name: $("#name").val(),
+        message: $("#message").val(),
+        postedAt: currentDate
+      });
+        
+        deliver();
+        scrollDown();
+         setTimeout(function() {
+      $('form.chat > span').addClass('spinner');
+    }, 100);
+
+    setTimeout(function() {
+      $('form.chat > span').removeClass('spinner');
+    }, 2000);
+      }
+      $("input[type=text], textarea").val("");
+      return false;
+    });
+  
+});
+
+function slugify(text) {
+  return text.toString().toLowerCase().trim()
+    .replace(/&/g, '-and-')
+    .replace(/[\s\W-]+/g, '-')
+    .replace(/[^a-zA-Z0-9-_]+/g,'');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PAGE SWITCH
+// Selectors
+var $navItem = $('.page-nav-item');
+
+// Functionality
+$navItem.on('click', function navigate(e){
+  var $this = $(e.currentTarget);
+  var $activeTarget = $('.page-nav-item.active');
+  var $page = $('.page-content');
+  var thisNav = $this.data('pagetarget');
+  var $thisPage = $('#page-content-'+thisNav);
+  var activeIndex = $navItem.index($activeTarget);
+  var targetIndex = $navItem.index($this);
+  
+  if( $this.hasClass('active') ){
+    return;
+  }
+  
+  $navItem.removeClass('active');
+  
+  if( targetIndex < activeIndex ){
+    $thisPage.addClass('transition-to').css('right', '100%');
+
+    TweenLite.to($thisPage, .5, {'right':0, onComplete: function() {
+
+      $page.removeClass('active');
+      $thisPage.removeClass('transition-to').addClass('active');
+
+    }});
+  } else {
+    $thisPage.addClass('transition-to').css('left', '100%');
+
+    TweenLite.to($thisPage, .5, {'left':0, onComplete: function() {
+
+      $page.removeClass('active');
+      $thisPage.removeClass('transition-to').addClass('active');
+
+    }});
+  } 
+
+  $this
+  	.addClass('active')
+  	.append('<div class="blue-splash"></div>');
+  
+  TweenLite.to($this.find('.blue-splash'), .3, {scale:"50", opacity:0});
+});
 
 
 
